@@ -19,7 +19,7 @@ public class UserBodyPreferenceRequest {
 
     @Schema(
         description = "설정 대상 신체 부위",
-        example = "NECK"
+        example = "목" // 여기서, 영어가 아니라 한글로 등록해야 area와 맞아 필터가 제대로 들어감.
     )
     private String bodyArea;
 

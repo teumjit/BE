@@ -264,11 +264,11 @@ public class StretchingService {
         String value = area.trim().toUpperCase(Locale.ROOT);
 
         return switch (value) {
-            case "목", "목 부위" -> "NECK";
-            case "어깨", "어깨 부위" -> "SHOULDER";
-            case "허리", "허리 부위", "아래 허리" -> "LOWER_BACK";
-            case "다리", "다리 부위" -> "LEG";
-            case "손", "손 부위" -> "HAND";
+            case "목", "목 부위" -> "목";
+            case "어깨", "어깨 부위" -> "어깨";
+            case "허리", "허리 부위", "아래 허리", "등" -> "허리";
+            case "다리", "다리 부위" -> "다리";
+            case "손", "손 부위" -> "손";
             default -> value;
         };
     }
