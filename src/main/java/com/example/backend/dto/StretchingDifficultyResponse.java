@@ -25,7 +25,7 @@ public class StretchingDifficultyResponse {
 
     @Schema(
         description = "난이도 또는 제약 조건의 값",
-        example = "BOTH_HANDS"
+        example = "ONE_HANDS"
     )
     private String difficulty;
 

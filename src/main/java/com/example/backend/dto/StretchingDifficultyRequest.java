@@ -13,13 +13,13 @@ public class StretchingDifficultyRequest {
 
     @Schema(
         description = "난이도 또는 제약 조건의 유형",
-        example = "REQUIREMENT"
+        example = "POSTURE:/CONSTRAINT:"
     )
     private String difficultyType;
 
     @Schema(
         description = "등록할 난이도 또는 제약 조건 값",
-        example = "BOTH_HANDS"
+        example = "STANDING/ONE_HANDS"
     )
     private String difficulty;
 
