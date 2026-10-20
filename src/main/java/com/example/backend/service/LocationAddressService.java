@@ -14,7 +14,7 @@ public class LocationAddressService {
     private final String apiKey;
 
     public LocationAddressService(
-            @Value("${google.maps.api-key:}") String apiKey) {
+            @Value("${google.maps.api-key}") String apiKey) {
         this.restClient = RestClient.builder()
                 .baseUrl("https://maps.googleapis.com")
                 .build();
