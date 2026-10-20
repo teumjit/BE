@@ -83,6 +83,12 @@ public class LocationAddressService {
         } catch (ResponseStatusException e) {
             throw e;
         } catch (Exception e) {
+            System.err.println(
+                    "Google 주소 조회 실패: "
+                            + e.getClass().getSimpleName()
+                            + " - " + e.getMessage()
+            );
+
             throw new ResponseStatusException(
                     HttpStatus.BAD_GATEWAY,
                     "Google 주소 조회 중 오류가 발생했습니다."
