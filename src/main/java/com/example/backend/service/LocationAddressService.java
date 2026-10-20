@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 @Service
 public class LocationAddressService {
 
@@ -31,7 +33,7 @@ public class LocationAddressService {
         }
 
         try {
-            JsonNode response = restClient.get()
+            String responseBody = restClient.get()
                     .uri(uriBuilder -> uriBuilder
                             .path("/maps/api/geocode/json")
                             .queryParam(
@@ -42,7 +44,10 @@ public class LocationAddressService {
                             .queryParam("key", apiKey)
                             .build())
                     .retrieve()
-                    .body(JsonNode.class);
+                    .body(String.class);
+
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode response = objectMapper.readTree(responseBody);
 
             if (response == null) {
                 throw new ResponseStatusException(
