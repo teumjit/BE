@@ -119,13 +119,13 @@ public class UserService {
                     "이미 사용 중인 이메일입니다."
                 );
             }
-
-            if (!emailVerificationService
-                    .consumeVerifiedEmail(newEmail)) {
-                throw new IllegalArgumentException(
-                    "새 이메일의 인증을 먼저 완료해 주세요."
-                );
-            }
+            
+            // if (!emailVerificationService
+            //         .consumeVerifiedEmail(newEmail)) {
+            //     throw new IllegalArgumentException(
+            //         "새 이메일의 인증을 먼저 완료해 주세요."
+            //     );
+            // }
 
             user.setUserId(newEmail);
         }

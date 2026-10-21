@@ -13,7 +13,7 @@ public class UserBodyPreferenceRequest {
 
     @Schema(
         description = "사용자 설정의 유형",
-        example = "UNCOMFORTABLE_BODY_PART"
+        example = "AVOID/PREFER"
     )
     private String preferenceType;
 
