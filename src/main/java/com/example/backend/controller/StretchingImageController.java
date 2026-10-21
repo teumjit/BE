@@ -41,7 +41,7 @@ public class StretchingImageController {
     })
     public ResponseEntity<List<StretchingImageResponse>> getImages(
             @Parameter(
-                    description = "사진 분류 (예: neck, shoulder, back)",
+                    description = "사진 분류 (예: neck, shoulder, back), 해당 기능 미구현... 아직 필요 없을 것 같아 미뤘습니다",
                     example = "neck"
             )
             @RequestParam(required = false) String category) {

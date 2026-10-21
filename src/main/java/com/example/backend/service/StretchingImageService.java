@@ -50,31 +50,31 @@ public class StretchingImageService {
 
             new StretchingImageResponse(
                     7L,
-                    "손바닥 뒤집기",
+                    "손목 위아래 움직이기",
                     "팔",
                     "/images/stretching/4_updown_hands/40updown_hands"
             ),
             new StretchingImageResponse(
                     8L,
-                    "손바닥 뒤집기",
+                    "손목 위아래 움직이기",
                     "팔",
                     "/images/stretching/4_updown_hands/41updown_hands"
             ),
             new StretchingImageResponse(
-                    7L,
-                    "손바닥 뒤집기",
+                    9L,
+                    "손목 위아래 움직이기",
                     "팔",
                     "/images/stretching/4_updown_hands/42updown_hands"
             ),
 
             new StretchingImageResponse(
-                    9L,
+                    10L,
                     "손바닥 뒤집기",
                     "팔",
                     "/images/stretching/5_flip_hand/50flip_hand"
             ),
             new StretchingImageResponse(
-                    7L,
+                    11L,
                     "손바닥 뒤집기",
                     "팔",
                     "/images/stretching/5_flip_hand/51flip_hand"
